@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Design Portfolio</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top">
       <div class="container flex-lg-column">
@@ -77,16 +77,20 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-10">
-              <h1 class="display-4 fw-bold">
+              <h1 class="display-4 fw-bold" data-aos="fade-up">
                 I'm a <span class="text-brand">UI/UX Designer</span> from
                 London, UK
               </h1>
-              <p>
+              <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
                 I am John Doe, And I craft high-performing and delightful
-                experiences tailored and conversion-focused
+                experiences tailored and conversion-focused. Lectus urna duis
+                convallis convallis tellus id interdum. Sapien et ligula
+                ullamcorper malesuada proin. In iaculis nunc sed augue lacus.
               </p>
-              <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
-              <a href="#" class="link-custom">Call: (233) 3454 2342</a>
+              <div data-aos="fade-up" data-aos-delay="600">
+                <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                <a href="#" class="link-custom">Call: (233) 3454 2342</a>
+              </div>
             </div>
           </div>
         </div>
@@ -96,14 +100,14 @@
       <!-- SERVICES -->
       <section id="services" class="full-height px-lg-5">
         <div class="container">
-          <div class="row pb-4">
+          <div class="row pb-4" data-aos="fade-up">
             <div class="col-lg-8">
               <h2 class="text-brand">Services</h2>
               <h3>Services That I Provide</h3>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
+          <div class="row gy-4">
+            <div class="col-md-4" data-aos="fade-up">
               <div class="service p-4 bg-base rounded-3 shadow-effect">
                 <div class="iconbox rounded-3">
                   <i class="las la-feather"></i>
@@ -116,7 +120,7 @@
                 <a href="#" class="link-custom">Read More</a>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
               <div class="service p-4 bg-base rounded-3 shadow-effect">
                 <div class="iconbox rounded-3">
                   <i class="las la-pencil-ruler"></i>
@@ -129,7 +133,7 @@
                 <a href="#" class="link-custom">Read More</a>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
               <div class="service p-4 bg-base rounded-3 shadow-effect">
                 <div class="iconbox rounded-3">
                   <i class="las la-laptop-code"></i>
@@ -146,6 +150,85 @@
         </div>
       </section>
       <!-- END of SERVICES -->
+
+      <!-- WORK -->
+      <section id="work" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h2 class="text-brand">Work</h2>
+              <h3>My Recent Projects</h3>
+            </div>
+          </div>
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="card-custom rounded-3 bg-base shadow-effect">
+                <div class="card-custom-image rounded-3">
+                  <img class="rounded-3" src="./images/project-1.jpg" alt="" />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Startup Landing Page</h4>
+                  <p>
+                    Consequat id porta nibh venenatis cras. Aliquet nec
+                    ullamcorper sit amet risus nullam eget. Mi ipsum faucibus
+                    vitae aliquet nec ullamcorper.
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-custom rounded-3 bg-base shadow-effect">
+                <div class="card-custom-image rounded-3">
+                  <img class="rounded-3" src="./images/project-2.png" alt="" />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Startup Landing Page</h4>
+                  <p>
+                    Consequat id porta nibh venenatis cras. Aliquet nec
+                    ullamcorper sit amet risus nullam eget. Mi ipsum faucibus
+                    vitae aliquet nec ullamcorper.
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-custom rounded-3 bg-base shadow-effect">
+                <div class="card-custom-image rounded-3">
+                  <img class="rounded-3" src="./images/project-3.png" alt="" />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Startup Landing Page</h4>
+                  <p>
+                    Consequat id porta nibh venenatis cras. Aliquet nec
+                    ullamcorper sit amet risus nullam eget. Mi ipsum faucibus
+                    vitae aliquet nec ullamcorper.
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-custom rounded-3 bg-base shadow-effect">
+                <div class="card-custom-image rounded-3">
+                  <img class="rounded-3" src="./images/project-4.png" alt="" />
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Startup Landing Page</h4>
+                  <p>
+                    Consequat id porta nibh venenatis cras. Aliquet nec
+                    ullamcorper sit amet risus nullam eget. Mi ipsum faucibus
+                    vitae aliquet nec ullamcorper.
+                  </p>
+                  <a href="#" class="link-custom">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END of WORK -->
     </div>
     <!-- END of CONTENT WRAPPER -->
 

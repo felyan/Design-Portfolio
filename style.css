@@ -92,7 +92,7 @@ img {
 }
 
 .navbar .nav-link.active {
-  color: var(--color-brand);
+  color: var(--color-brand)!important;
 }
 
 @media (min-width: 992px) {
@@ -163,4 +163,31 @@ img {
 
 #services h3 {
   font-size: 3rem;
+}
+
+
+/* WORK */
+
+#work h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+#work h3 {
+  font-size: 3rem;
+}
+
+
+/* CARD */
+
+.card-custom .card-custom-image {
+  overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+  transition: all o.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+  transform: scale(1.1);
 }
